@@ -1,12 +1,10 @@
 # PyCoolPlot
 
-A cool plot module for Python
+A cool plotting module in Python
 
 # What is this?
 
-This is a plotting module for Python.
-
-It only uses matplotlib.
+This is a plotting module in Python.
 
 Ref:
 
@@ -16,11 +14,27 @@ Ref:
 
 # Requirements
 
-- Python 3.6.x
+- Python 3.x
 
-- matplotlib 2.x.x
+- matplotlib
+
+- numpy
+
+- pandas
+
 
 # Download
+
+## Using pip
+
+>$ pip install PyCoolPlot
+
+PyPI page:
+
+- [PyCoolPlot · PyPI](https://pypi.org/project/PyCoolPlot/#description)
+
+
+## Manual install
 
 1. Install Python 3.6.x.
 
@@ -109,7 +123,5 @@ MIT
 # Author
 
 - [Atsushi Sakai](https://github.com/AtsushiSakai/) ([@Atsushi_twi](https://twitter.com/Atsushi_twi))
-
-
 
 

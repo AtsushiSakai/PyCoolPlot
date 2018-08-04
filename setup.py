@@ -3,13 +3,13 @@ from setuptools import setup, find_packages
 # read README
 try:
     import pypandoc
-    long_description = pypandoc.convert('README.md', 'rst')
+    readme = pypandoc.convert('README.md', 'rst')
 except(IOError, ImportError):
-    long_description = open('README.md').read()
+    readme = open('README.md').read()
 
 setup(
     name="PyCoolPlot",
-    version="0.0.1",
+    version="0.0.2",
     url="https://github.com/AtsushiSakai/PyCoolPlot",
     author="Atsushi Sakai",
     author_email="asakai.amsl@gmail.com",
