@@ -9,7 +9,7 @@ except(IOError, ImportError):
 
 setup(
     name="PyCoolPlot",
-    version="0.0.2",
+    version="0.0.3",
     url="https://github.com/AtsushiSakai/PyCoolPlot",
     author="Atsushi Sakai",
     author_email="asakai.amsl@gmail.com",
