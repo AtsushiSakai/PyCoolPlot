@@ -9,7 +9,7 @@ except(IOError, ImportError):
 
 setup(
     name="PyCoolPlot",
-    version="0.0.3",
+    version="0.0.4",
     url="https://github.com/AtsushiSakai/PyCoolPlot",
     author="Atsushi Sakai",
     author_email="asakai.amsl@gmail.com",
@@ -17,6 +17,7 @@ setup(
     maintainer_email='asakai.amsl@gmail.com',
     description=("A cool plotting module in Python"),
     long_description=readme,
+    python_requires='>3.6.0',
     license="MIT",
     keywords="python plot matplotlib",
     packages=find_packages(),

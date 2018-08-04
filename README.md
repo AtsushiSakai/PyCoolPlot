@@ -14,7 +14,7 @@ Ref:
 
 # Requirements
 
-- Python 3.x
+- Python 3.6.x or higher
 
 - matplotlib
 
