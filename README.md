@@ -44,6 +44,10 @@ PyPI page:
 
 # How to use
 
+The sample code might be helpful:
+
+- [PyCoolPlot/sample\.py](https://github.com/AtsushiSakai/PyCoolPlot/blob/master/sample.py)
+
 ## import
 
 If you use pip to install PyCoolPlot, you can import it like:
