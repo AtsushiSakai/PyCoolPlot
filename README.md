@@ -44,6 +44,13 @@ PyPI page:
 
 # How to use
 
+## import
+
+If you use pip to install PyCoolPlot, you can import it like:
+
+	from pycoolplot import pycoolplot
+
+
 ## Horizontal bar plot
 
 You can plot a beautiful horizontal bar plot like:
