@@ -1,18 +1,24 @@
 from setuptools import setup, find_packages
 
+# read README
+try:
+    import pypandoc
+    long_description = pypandoc.convert('README.md', 'rst')
+except(IOError, ImportError):
+    long_description = open('README.md').read()
+
 setup(
     name="PyCoolPlot",
     version="0.0.1",
+    url="https://github.com/AtsushiSakai/PyCoolPlot",
     author="Atsushi Sakai",
     author_email="asakai.amsl@gmail.com",
     maintainer='Atsushi Sakai',
     maintainer_email='asakai.amsl@gmail.com',
     description=("A cool plotting module in Python"),
     long_description=readme,
-    packages=find_packages(),
     license="MIT",
     keywords="python plot matplotlib",
-    url="https://github.com/AtsushiSakai/PyCoolPlot",
     packages=find_packages(),
     classifiers=[
         'Programming Language :: Python :: 3',
