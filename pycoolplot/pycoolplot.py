@@ -15,6 +15,7 @@ import numpy as np
 import pandas as pd
 from matplotlib.ticker import MultipleLocator
 import matplotlib.dates as mdates
+import os
 
 
 def horizontal_bar(index, data, color="C0", xlabel="", rate_graph=False):
@@ -148,7 +149,10 @@ def time_vertical_bar(data, time_index,
     ax.spines['left'].set_visible(False)
     ax.spines['right'].set_visible(False)
     ax.spines['top'].set_visible(False)
-    ax.xaxis.set_major_formatter(mdates.DateFormatter('%-m'))
+    if os.name == "nt": #windows
+        ax.xaxis.set_major_formatter(mdates.DateFormatter('%m'))
+    else: # other
+        ax.xaxis.set_major_formatter(mdates.DateFormatter('%-m'))
     ax.xaxis.set_major_locator(mdates.MonthLocator())
     fig.canvas.draw()
     for key, gr in df.groupby(df.index.year):
